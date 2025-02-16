@@ -22,29 +22,33 @@
     <header class="header">
       <a href="#" class="logo"><span class="logo_blue">Web</span>Studio</a>
       <nav>
-        <ul>
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <ul class="navigarion-list">
+          <li class="item"><a href="" class="nav-link">Studio</a></li>
+          <li class="item"><a href="" class="nav-link">Portfolio</a></li>
+          <li class="item"><a href="" class="nav-link">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <ul class="contact-list">
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="contact-link"
+            >info@devstudio.com</a
+          >
         </li>
-        <li>
-          <a href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+        <li class="item">
+          <a href="tel:+11 (000) 111-11-11" class="contact-link"
+            >+11 (000) 111-11-11</a
+          >
         </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <section class="hero">
+        <h1 class="hero-message">Effective Solutions for Your Business</h1>
+        <button type="button" class="hero-btn">Order Service</button>
       </section>
-      <section>
-        <ul>
-          <li>
+      <section class="skills">
+        <ul class="skills-list">
+          <li class="item">
             <h3>Strategy</h3>
             <p>
               Our goal is to identify the business problem to walk away with the
@@ -76,44 +80,107 @@
       </section>
       <section class="team">
         <h2>Our Team</h2>
-        <ul>
-          <li>
+        <ul class="team-list">
+          <li class="item">
             <img
               src="./image/Mark_Guerrero.jpg"
               alt="profile photo"
               width="264"
             />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <div class="teammate-description">
+              <h3>Mark Guerrero</h3>
+              <p>Product Designer</p>
+            </div>
           </li>
-          <li>
+          <li class="item">
             <img src="./image/tom_ford.jpg" alt="profile photo" width="264" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <div class="teammate-description">
+              <h3>Tom Ford</h3>
+              <p>Frontend Developer</p>
+            </div>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./image/camila_garcia.jpg"
               alt="profile photo"
               width="264"
             />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <div class="teammate-description">
+              <h3>Camila Garcia</h3>
+              <p>Marketing</p>
+            </div>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./image/daniel_wilson.jpg"
               alt="profile photo"
               width="264"
             />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <div class="teammate-description">
+              <h3>Daniel Wilson</h3>
+              <p>UI Designer</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio">
+        <h2>Our Portfolio</h2>
+        <ul class="projects-list">
+          <li class="item">
+            <img src="./image/banking.jpg" alt="Banking App" width="360" />
+            <div class="project-description">
+              <h3>Banking App</h3>
+              <p>App</p>
+            </div>
+          </li>
+          <li class="item">
+            <img src="./image/paiment.jpg" alt="Cashless Payment" width="360" />
+            <div class="project-description">
+              <h3>Cashless Payment</h3>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li class="item">
+            <img
+              src="./image/meditation.jpg"
+              alt="Meditation App"
+              width="360"
+            />
+            <div class="project-description">
+              <h3>Meditation App</h3>
+              <p>App</p>
+            </div>
+          </li>
+          <li class="item">
+            <img src="./image/taxi.jpg" alt="Taxi Service" width="360" />
+            <div class="project-description">
+              <h3>Taxi Service</h3>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li class="item">
+            <img
+              src="./image/screen.jpg"
+              alt="Screen Illustrations"
+              width="360"
+            />
+            <div class="project-description">
+              <h3>Screen Illustrations</h3>
+              <p>Design</p>
+            </div>
+          </li>
+          <li class="item">
+            <img src="./image/courses.jpg" alt="Online Courses" width="360" />
+            <div class="project-description">
+              <h3>Online Courses</h3>
+              <p>Marketing</p>
+            </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="#">WEBSTUDIO</a>
+    <footer class="footer">
+      <a href="#" class="bottom-logo">WEB<span>STUDIO</span></a>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
