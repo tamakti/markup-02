@@ -13,14 +13,19 @@
   --white: #fff;
   --dairy: #fcfcfc;
 }
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
+}
+img {
+  display: block;
 }
 ul,
 ol {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 a {
   text-decoration: none;
@@ -64,7 +69,6 @@ body {
   color: var(--ocean);
 }
 .contact-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -109,6 +113,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
+  cursor: pointer;
 }
 .hero-btn:focus,
 .hero-btn:hover {
@@ -116,10 +121,12 @@ body {
 }
 
 .skills {
+  padding-left: 156px;
+  padding-right: 156px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.skills > .item > h3 {
+.skill-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -127,8 +134,7 @@ body {
   color: var(--navy-blue);
   margin-bottom: 8px;
 }
-.skills > .item > p {
-  font-weight: 400;
+.skill-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -160,8 +166,10 @@ body {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
-.teammate-description {
+.teammate-thumb {
   padding: 32px 16px;
+}
+.teammate-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -169,7 +177,7 @@ body {
   text-align: center;
   color: var(--navy-blue);
 }
-.teammate-description > p {
+.teammate-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -190,10 +198,17 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
-.project-description {
+.project-thumb {
   padding: 32px 16px;
 
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  width: 360px;
+}
+.project-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -201,16 +216,9 @@ body {
 
   color: var(--navy-blue);
 
-  border-bottom: 1px solid var(--cornflower);
-  border-left: 1px solid var(--cornflower);
-  border-right: 1px solid var(--cornflower);
-  width: 360px;
-}
-.project-description > h3 {
   margin-bottom: 8px;
 }
-.project-description > p {
-  font-weight: 400;
+.project-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -238,7 +246,6 @@ body {
   color: var(--cloud);
 }
 .footer > p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
